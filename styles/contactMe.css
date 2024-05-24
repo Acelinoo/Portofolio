@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif ;
+}
+body {
+    background-color:#222831;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+}
+
+/* CSS lainnya seperti sebelumnya */
+
+* {
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: white;
+    background-color: #282f3a6e;
+    width: 100%;
+    font-size: 20px;
+    height: 70px;
+    padding: 0 20px; 
+}
+nav h1 {
+    margin: 0;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    position: relative;
+}
+nav .a-link{
+    display: flex;
+   align-items: center;
+}nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Jarak antara teks dan garis */
+    width: 0%;
+    height: 2px; /* Ketebalan garis */
+    background-color:#898989; /* Warna garis */
+    transition: width 0.3s ease; /* Efek transisi lebar selama 0.3 detik dengan percepatan (ease) */
+}
+
+/* Efek transisi untuk lebar garis pada hover */
+nav a:hover::after {
+    width: 100%; /* Lebar garis saat tautan dihover */
+}
+h1{
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink-animation 2s infinite;
+}/* Tambahkan tata letak dan gaya untuk input dan textarea */
+/* hr */
+hr.slideInFromLeft {
+    border: 0;
+    height: 1px;
+    margin-top: -5px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    width: 0px;
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      width: 0;
+      left: 50%;
+    }
+    100% {
+      width: 50%;
+      left: 0;
+    }
+  }
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+form{
+    margin-top: -20px;
+}
+.message input,
+.message textarea {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.message input:focus,
+.message textarea:focus {
+    outline: none;
+    border-color: #555;
+    background-color: #fff;
+}
+
+.message button {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 8px;
+    background-color: #222831;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.message button:hover {
+    background-color: #fff;
+    color: #222831;
+}
+
+.link-social-media{
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+.link-social-media i{
+    font-size:30px;
+}
+.link-social-media span{
+    margin-left: 10px;
+}

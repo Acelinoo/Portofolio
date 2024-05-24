@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222831;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #282f3a6e;
+    width: 100%;
+    font-size: 20px;
+    height: 70px;
+    padding: 0 20px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+nav .a-link {
+    display: flex;
+    align-items: center;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #898989;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-desc {
+    color: white;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.form-desc h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink {
+    animation: blink-animation 2s infinite;
+}
+
+.form-desc button {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px;
+}
+
+.form-desc button:hover {
+    background-color: white;
+    color: #222831;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.buttons i{
+    margin-left: 5px;
+}
+
+.link-social-media {
+    margin-top: 20px;
+}
+
+.link-social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.link-social-media a:hover {
+    color: #898989;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .a-link {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .a-link.show {
+        display: flex;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .form-desc {
+        margin: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-desc h1 {
+        font-size: 30px;
+    }
+
+    .form-desc p {
+        width: 100%;
+    }
+
+    .form-desc button {
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    img {
+        margin: 5% auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav h1 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .form-desc {
+        font-size: 18px;
+    }
+
+    .form-desc h1 {
+        font-size: 25px;
+    }
+
+    .form-desc button {
+        width: 90px;
+        height: 28px;
+        font-size: 14px;
+    }
+}

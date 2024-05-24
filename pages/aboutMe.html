@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles/aboutMe.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <nav>
+        <a href="home.html">
+            <h1>Marchelino Kurniawan</h1>
+        </a>
+        <div class="a-link">
+            <a href="home.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="portofolio.html">Portofolio</a>
+            <a href="contactMe.html">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <h1 data-aos="flip-right">About Me</h1>
+        <hr class="slideInFromLeft" data-aos="flip-right">
+        <div data-aos="zoom-in" class="label-gallery">
+            <img src="/sources/images/acel-img4.jpg" alt="Marchelino Kurniawan">
+            <p>Hello, I'm Marchelino Kurniawan. I was born on 3 January 2006, and I live in Kabupaten Bandung, West
+                Java. I
+                graduated from SMK Yadika Soreang majoring in Software Engineering. I have interned at PT Nusantech as a
+                web
+                developer.</p>
+            <button onclick="download()">Download CV</button>
+        </div>
+    </main>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="link-social-media">
+            <a style="margin-left: -20px;" href="https://www.instagram.com/acelino"><i class="fa-brands fa-instagram"
+                    style="color: #ffffff;"></i></a>
+            <a href="https://tiktok.com/aceiino"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+            <a href="https://wa.me/089655223792"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+            <p>&copy;2024 <a href="https://www.instagram.com/acelino">Marchelino Kurniawan</a> | All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="/scripts/aboutMe.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                // Customize AOS options here
+            });
+        });
+        function download() {
+            alert("Opss, CV sedang dalam perbaikan!");
+        }
+    </script>
+</body>
+
+</html>
