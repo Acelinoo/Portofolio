@@ -1,5 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+/* responsive start */
 
+@media only screen and (max-width: 428px) {
+    nav {
+        height: auto;
+        padding: 10px; /* Penyesuaian padding untuk ruang yang lebih baik */
+    }
+
+    nav .a-link {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .a-link.show {
+        display: flex;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    img {
+        margin: 5% auto;
+        width: 90%;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .link-social-media {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .wave {
+        display: none;
+    }
+}
+
+/* /responsive end\ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -68,7 +115,7 @@ h1 {
 hr.slideInFromLeft {
     border: 0;
     height: 1px;
-    margin: -5px auto 20px;
+    margin: 0px auto 20px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
     width: 200px;
     animation: slideInFromLeft 1s ease-out forwards;
