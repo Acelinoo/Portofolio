@@ -31,7 +31,7 @@
                 page or <a style="text-decoration: none; color: rgb(95, 228, 255);"
                     href="https://acelino.netlify.app/pages/portofolio">click
                     here</a>.</p>
-            <button id="cv" onclick="download()">Download
+            <button id="cv" onclick="download()">Open
                 CV</button>
         </div>
     </main>
@@ -56,11 +56,11 @@
             });
         });
         function download() {
-            if (download) {
-                confirm("Download CV Marchelino Kurniawan?")
-            } window.location.href = "/sources/CV/Marchelino Kurniawan CV.pdf"
-
+            if (confirm("Download CV Marchelino Kurniawan?")) {
+                window.location.href = "/sources/CV/Marchelino Kurniawan CV.pdf";
+            }
         }
+
     </script>
 </body>
 
