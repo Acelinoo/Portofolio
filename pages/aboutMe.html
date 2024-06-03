@@ -16,7 +16,6 @@
         </a>
         <div class="a-link">
             <a href="/">Home</a>
-            <a href="/pages/aboutMe.html">About Me</a>
             <a href="/pages/portofolio.html">Portofolio</a>
             <a href="/pages/contactMe.html">Contact</a>
         </div>
@@ -26,23 +25,19 @@
         <hr class="slideInFromLeft" data-aos="flip-right">
         <div data-aos="zoom-in" class="label-gallery">
             <img src="/sources/images/acel-img4.jpg" alt="Marchelino Kurniawan">
-            <p>Hello, I'm Marchelino Kurniawan. I was born on 3 January 2006, and I live in Kabupaten Bandung, West
-                Java. I
-                graduated from SMK Yadika Soreang majoring in Software Engineering. I have interned at PT Nusantech as a
-                web
-                developer.</p>
-            <button onclick="download()">Download CV</button>
+            <p>Hello, I'm Marchelino Kurniawan. I was born on 3 January 2006, and I live in Bandung Regency, West Java.
+                I graduated from SMK Yadika Soreang majoring in Software Engineering. I have interned at PT Nusantech as
+                a web developer, while I was at Nusantech I created several websites, you can see them on the portfolio
+                page or <a style="text-decoration: none; color: rgb(95, 228, 255);"
+                    href="https://acelino.netlify.app/pages/portofolio">click
+                    here</a>.</p>
+            <button id="cv" onclick="download()">Download
+                CV</button>
         </div>
     </main>
     <footer>
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
         <div class="link-social-media">
-            <a style="margin-left: -20px;" href="https://www.instagram.com/acelino"><i class="fa-brands fa-instagram"
+            <a href="https://www.instagram.com/acelino"><i class="fa-brands fa-instagram"
                     style="color: #ffffff;"></i></a>
             <a href="https://tiktok.com/aceiino"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
@@ -51,6 +46,7 @@
             </p>
         </div>
     </footer>
+
     <script src="/scripts/aboutMe.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -60,7 +56,10 @@
             });
         });
         function download() {
-            alert("Opss, CV sedang dalam perbaikan!");
+            if (download) {
+                confirm("Download CV Marchelino Kurniawan?")
+            } window.location.href = "/sources/CV/Marchelino Kurniawan CV.pdf"
+
         }
     </script>
 </body>

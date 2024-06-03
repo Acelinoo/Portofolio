@@ -7,3 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Customize AOS options here
   });
 });
+
+const downloadCV = document.getElementById("cv");
+function downloadCV() {
+  if (downloadCV) {
+  }
+}

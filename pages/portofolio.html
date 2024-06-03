@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/styles/portofolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,28 +18,27 @@
         <div class="a-link">
             <a href="/">Home</a>
             <a href="/pages/aboutMe.html">About Me</a>
-            <a href="/pages/portofolio.html">Portofolio</a>
             <a href="/pages/contactMe.html">Contact</a>
         </div>
     </nav>
     <h1>Portofolio Saya</h1>
     <hr class="slideInFromLeft">
     <div class="container">
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <p>Project #1</p>
             <img src="/sources/images/project/project1.png" alt="Gambar Proyek 1">
             <h3>Info imo MLBB</h3>
             <p class="desc">Website Info update Mobile Legends</p>
             <button>Detail</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <p>Proyek #2</p>
             <img src="/sources/images/project/project 2.png" alt="Gambar Proyek 2">
             <h3>NexSolution</h3>
             <p class="desc">Website untuk membantu cara membuat CV, menjawab interview dan lainnya</p>
             <button>Detail</button>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
             <p>Project #3</p>
             <img src="/sources/images/project/ISS Tracker.jpeg" alt="Gambar Project 3">
             <h3>ISS Tracker</h3>
@@ -48,6 +48,11 @@
             </a>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

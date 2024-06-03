@@ -1,63 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
-/* responsive start */
 
-@media only screen and (max-width: 428px) {
-    nav {
-        height: auto;
-        padding: 10px; /* Penyesuaian padding untuk ruang yang lebih baik */
-    }
-
-    nav .a-link {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav .a-link.show {
-        display: flex;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
-
-    .content {
-        padding: 10px;
-    }
-
-    img {
-        margin: 5% auto;
-        width: 90%;
-    }
-
-    footer {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .link-social-media {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    footer .wave {
-        display: none;
-    }
-}
-
-/* /responsive end\ */
+/* Menggunakan flexbox untuk membuat layout responsif */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
 }
 
 body {
     background-color: #222831;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {
@@ -65,12 +18,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #282f3a;
-    padding: 0 20px;
-    height: 70px;
+    padding: 10px 20px; /* Sedikit padding pada perangkat seluler */
+    height: auto; /* Menghapus tinggi tetap */
 }
 
 nav h1 {
     margin: 0;
+    font-size: 24px;
 }
 
 nav a {
@@ -78,14 +32,12 @@ nav a {
     color: white;
     margin: 10px;
     position: relative;
-    font-size: 20px;
 }
 
 nav .a-link {
     display: flex;
     align-items: center;
 }
-
 
 nav a::after {
     content: '';
@@ -110,24 +62,16 @@ main {
 h1 {
     color: white;
     text-align: center;
+    font-size: 24px;
 }
 
 hr.slideInFromLeft {
     border: 0;
     height: 1px;
-    margin: 0px auto 20px;
+    margin: 20px auto; /* Jarak atas dan bawah ditingkatkan untuk penyesuaian */
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
     width: 200px;
     animation: slideInFromLeft 1s ease-out forwards;
-}
-
-@keyframes slideInFromLeft {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 200px;
-    }
 }
 
 .label-gallery {
@@ -144,9 +88,9 @@ hr.slideInFromLeft {
 }
 
 .label-gallery p {
-    max-width: 460px;
+    max-width: 60%; /* Mengurangi lebar maksimum untuk penyesuaian */
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto; /* Memusatkan teks */
 }
 
 button {
@@ -169,161 +113,29 @@ footer {
     background-color: #273036;
     color: white;
     text-align: center;
-    margin-top: 50px;
-    padding: 150px 20px 20px;
-    position: relative;
+    padding: 20px;
 }
 
 footer i {
     font-size: 30px;
 }
 
-footer span {
-    margin-left: 10px;
-}
-
 footer a {
     text-align: center;
     color: white;
     text-decoration: none;
-    position: relative;
-    z-index: 1;
-}
-footer .link-social-media i{
-    margin-left: 10px;
-    text-align: center;
 }
 
-footer .wave {
-    position: absolute;
-    top: -65px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url("/sources/svg/wave.png");
-    background-size: 1000px 100px;
-}
-
-footer .wave#wave1 {
-    z-index: 100;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWaves 4s linear infinite;
-}
-
-footer .wave#wave2 {
-    z-index: 90;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animate 4s linear infinite !important;
-}
-
-footer .wave#wave3 {
-    z-index: 100;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animateWaves 3s linear infinite;
-}
-
-footer .wave#wave4 {
-    z-index: 90;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animate 3s linear infinite;
-}
-
-@keyframes animateWaves {
-    0% {
-        background-position-x: 1000px;
-    }
-    100% {
-        background-position-x: 0;
-    }
-}
-
-@keyframes animate {
-    0% {
-        background-position-x: 1000px;
-    }
-    100% {
-        background-position-x: 0;
-    }
-}
-@media only screen and (max-width: 600px) {
-    /* Penyesuaian untuk mode ponsel */
-    nav {
-        flex-direction: column;
-        height: auto;
-    }
-
-    nav .a-link {
-        flex-direction: column;
-        margin-top: 10px; /* Atur jarak antara setiap tautan */
-    }
-
-    .label-gallery img {
-        max-width: 90%; /* Sesuaikan lebar gambar agar sesuai dengan ukuran layar ponsel */
-    }
-
-    footer {
-        position: fixed; /* Footer akan tetap di bagian bawah layar */
-        bottom: 0; /* Footer akan menempel pada bagian bawah layar */
-        width: 100%; /* Footer akan mengisi seluruh lebar layar */
-    }
-}
-
-.link-social-media {
-    margin-top: 50px;
+footer .link-social-media {
+    margin-top: 20px;
     font-size: 20px;
-    position: relative;
-    z-index: 2;
-    margin-top: 0px;
-    background-color: #273036;
 }
 
-button {
-    width: 110px;
-    height: 35px;
-    border-radius: 5px;
-    background-color: transparent;
-    margin-bottom: 20px;
-    border: 2px solid white;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+footer .link-social-media a {
+    margin: 0 10px;
 }
 
-button:hover {
-    background-color: white;
-    color: #222831;
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
 }
-
-@media only screen and (max-width: 600px) {
-    body {
-        width: 100%;
-    }
-
-    nav h1 {
-        font-size: 18px;
-    }
-
-    nav a {
-        font-size: 16px;
-        margin: 5px;
-    }
-
-    .label-gallery p {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .label-gallery img {
-        width: 90%;
-    }
-
-    button {
-        width: 100px;
-        height: 30px;
-        font-size: 14px;
-   
-    }}
