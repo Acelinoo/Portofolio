@@ -14,16 +14,14 @@ body {
 * {
   box-sizing: border-box;
 }
-.navbar {
+nav {
+    display: flex;
     margin-top: -20px;
     position: sticky;
     top: 0;
-    margin-left: 100px;
+    margin-left:0px;
     z-index: 1000; /* Menentukan urutan tumpukan untuk memastikan navigasi di atas konten */
   }
-.navbar-a{
-    padding-left: 720px;
-}
 h1 {
   text-align: center;
   margin-top: 5%;
