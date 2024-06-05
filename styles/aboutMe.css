@@ -2,140 +2,124 @@
 
 /* Menggunakan flexbox untuk membuat layout responsif */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #222831;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #282f3a;
-    padding: 10px 20px; /* Sedikit padding pada perangkat seluler */
-    height: auto; /* Menghapus tinggi tetap */
-}
-
-nav h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    position: relative;
-}
-
-nav .a-link {
-    display: flex;
-    align-items: center;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background-color: #898989;
-    transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
+  background-color: #222831;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
-    color: white;
-    text-align: center;
-    font-size: 24px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
 }
 
 hr.slideInFromLeft {
-    border: 0;
-    height: 1px;
-    margin: 20px auto; /* Jarak atas dan bawah ditingkatkan untuk penyesuaian */
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-    width: 200px;
-    animation: slideInFromLeft 1s ease-out forwards;
+  border: 0;
+  height: 1px;
+  margin: 20px auto; /* Jarak atas dan bawah ditingkatkan untuk penyesuaian */
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  width: 200px;
+  animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .label-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .label-gallery img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
 }
 
 .label-gallery p {
-    max-width: 60%; /* Mengurangi lebar maksimum untuk penyesuaian */
-    text-align: center;
-    margin: 20px auto; /* Memusatkan teks */
+  max-width: 60%; /* Mengurangi lebar maksimum untuk penyesuaian */
+  text-align: center;
+  margin: 20px auto; /* Memusatkan teks */
 }
 
 button {
-    width: 110px;
-    height: 35px;
-    border-radius: 5px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+  width: 110px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-    background-color: white;
-    color: #222831;
+  background-color: white;
+  color: #222831;
+}
+
+.navbar-toggler {
+  border: none;
+  color: white; /* Warna ikon tetap putih */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  color: white; /* Warna ikon tetap putih */
+}
+
+.navbar-toggler-icon {
+  color: white; /* Warna ikon tetap putih */
+  background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+  border-radius: 5px;
 }
 
 footer {
-    background-color: #273036;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: #273036;
+  color: white;
+  text-align: center;
+  position: relative; /* Mengatur posisi relatif untuk footer */
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  margin-top: auto; /* Mendorong footer ke bagian bawah halaman */
 }
 
 footer i {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 footer a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 footer .link-social-media {
-    margin-top: 20px;
-    font-size: 20px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 footer .link-social-media a {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 footer p {
-    margin-top: 10px;
-    font-size: 14px;
+  margin-top: 10px;
+  font-size: 14px;
 }

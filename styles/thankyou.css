@@ -1,87 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
 
 * {
-  font-family: "Montserrat", sans-serif ;
+  font-family: "Montserrat", sans-serif;
 }
 body {
-    display: flex;
-    flex-direction: column;
-    background-color:#222831;
-    font-family: 'Poppins', sans-serif; 
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #222831;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 /* CSS lainnya seperti sebelumnya */
 
 * {
-    box-sizing: border-box;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    color: white;
-    background-color: #282f3a6e;
-    width: 100%;
-    font-size: 20px;
-    height: 70px;
-    padding: 0 20px; 
-}
-nav h1 {
-    margin: 0;
+  box-sizing: border-box;
 }
 
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin: 10px;
-    position: relative;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 3%;
 }
-nav .a-link{
-    display: flex;
-   align-items: center;
-}nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px; /* Jarak antara teks dan garis */
-    width: 0%;
-    height: 2px; /* Ketebalan garis */
-    background-color:#898989; /* Warna garis */
-    transition: width 0.3s ease; /* Efek transisi lebar selama 0.3 detik dengan percepatan (ease) */
+img {
+  width: 500px;
 }
-
-/* Efek transisi untuk lebar garis pada hover */
-nav a:hover::after {
-    width: 100%; /* Lebar garis saat tautan dihover */
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin-top: 3%;
-}
-img{
-   width: 500px;
-} button {
-    width: 300px;
-    height: 40px;
-    margin-top: 10px;
-    padding: 10px;
-    border: 2px white solid;
-    border-radius: 8px;
-    background-color: #222831;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+button {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px white solid;
+  border-radius: 8px;
+  background-color: #222831;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
- button:hover {
-    background-color: #fff;
-    color: #222831;
+button:hover {
+  background-color: #fff;
+  color: #222831;
 }

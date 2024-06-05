@@ -2,57 +2,79 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/styles/portofolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/styles/portofolio.css" />
+  <title>Portofolio</title>
 </head>
 
 <body>
-    <nav>
-        <a href="/">
-            <h1>Marchelino Kurniawan</h1>
-        </a>
-        <div class="a-link">
-            <a href="/">Home</a>
-            <a href="/pages/aboutMe.html">About Me</a>
-            <a href="/pages/contactMe.html">Contact</a>
-        </div>
-    </nav>
-    <h1>Portofolio Saya</h1>
-    <hr class="slideInFromLeft">
-    <div class="container">
-        <div class="card" data-aos="zoom-in">
-            <p>Project #1</p>
-            <img src="/sources/images/project/project1.png" alt="Gambar Proyek 1">
-            <h3>Info imo MLBB</h3>
-            <p class="desc">Website Info update Mobile Legends</p>
-            <button>Detail</button>
-        </div>
-        <div class="card" data-aos="zoom-in">
-            <p>Proyek #2</p>
-            <img src="/sources/images/project/project 2.png" alt="Gambar Proyek 2">
-            <h3>NexSolution</h3>
-            <p class="desc">Website untuk membantu cara membuat CV, menjawab interview dan lainnya</p>
-            <button>Detail</button>
-        </div>
-        <div class="card" data-aos="zoom-in">
-            <p>Project #3</p>
-            <img src="/sources/images/project/ISS Tracker.jpeg" alt="Gambar Project 3">
-            <h3>ISS Tracker</h3>
-            <p class="desc">Website pelacak satelit</p>
-            <a href="https://acelino-isstracker.netlify.app/">
-                <button>Detail</button>
-            </a>
-        </div>
-    </div>
+  <div class="nav">
+    <nav data-aos="fade-down" class="navbar navbar-expand-lg navbar-dark bg-body-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Marchelino Kurniawan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-a">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="../index.html">Home</a>
+              <a class="nav-link" href="./aboutMe.html">About</a>
+              <a class="nav-link active" aria-current="page" href="./portofolio.html">Portofolio</a>
+              <a class="nav-link" href="./contactMe.html">Contact</a>
+            </div>
+          </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="box-title">
+
+    <h1>Portofolio Saya</h1>
+    <hr class="slideInFromLeft" />
+  </div>
+  <div class="container">
+    <div class="card" data-aos="zoom-in">
+      <p>Project #1</p>
+      <img src="/sources/images/project/project1.png" alt="Gambar Proyek 1" />
+      <h3>Info imo MLBB</h3>
+      <p class="desc">Website Info update Mobile Legends</p>
+      <button class="btn-dtail">Detail</button>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <p>Proyek #2</p>
+      <img src="/sources/images/project/project 2.png" alt="Gambar Proyek 2" />
+      <h3>NexSolution</h3>
+      <p class="desc">
+        Website untuk membantu cara membuat CV, menjawab interview dan lainnya
+      </p>
+      <button class="btn-dtail">Detail</button>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <p>Project #3</p>
+      <img src="/sources/images/project/ISS Tracker.jpeg" alt="Gambar Project 3" />
+      <h3>ISS Tracker</h3>
+      <p class="desc">Website pelacak satelit</p>
+      <a href="https://acelino-isstracker.netlify.app/">
+        <button class="btn-dtail">Detail</button>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

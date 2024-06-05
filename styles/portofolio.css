@@ -1,201 +1,120 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
 /* Media Queries untuk Responsif */
-@media (max-width: 768px) {
-  nav {
-      flex-direction: column;
-      height: auto;
-  }
 
-  nav .a-link {
-      flex-direction: column;
-      margin-top: 10px;
-  }
-
-  h1 {
-      font-size: 24px;
-  }
-
-  .container {
-      padding: 10px;
-  }
-
-  .card {
-      width: 100%;
-  }
-
-  button {
-      width: 100%;
-      margin-top: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  nav {
-      flex-direction: column;
-      height: auto;
-  }
-
-  nav .a-link {
-      flex-direction: column;
-      margin-top: 10px;
-  }
-
-  h1 {
-      font-size: 20px;
-  }
-
-  .container {
-      padding: 10px;
-  }
-
-  .card {
-      width: 100%;
-  }
-
-  button {
-      width: 100%;
-      margin-top: 10px;
-  }
-}
 * {
   font-family: "Montserrat", sans-serif !important;
 }
 
 body {
-    background-color: #222831;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+  background-color: #222831;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    background-color: #282f3a6e;
-    width: 100%;
-    font-size: 20px;
-    height: 70px;
-    padding: 0 20px;
+.navbar {
+    margin-top: -20px;
+    position: sticky;
+    top: 0;
+    margin-left: 100px;
+    z-index: 1000; /* Menentukan urutan tumpukan untuk memastikan navigasi di atas konten */
+  }
+.navbar-a{
+    padding-left: 720px;
 }
-
-nav h1 {
-    margin: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin: 10px;
-    position: relative;
-}
-
-nav .a-link {
-    display: flex;
-    align-items: center;
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background-color: #898989;
-    transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
 h1 {
-    text-align: center;
-    margin-top: 5%;
-    color: white;
+  text-align: center;
+  margin-top: 5%;
+  color: white;
 }
 
 hr.slideInFromLeft {
-    border: 0;
-    height: 1px;
-    margin-top: -20px;
-    margin-bottom: 0;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
-    width: 0;
-    animation: slideInFromLeft 1s ease-out forwards;
+    
+  border: 0;
+  height: 1px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  width: 0;
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+.box-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @keyframes slideInFromLeft {
-    0% {
-        width: 0;
-        left: 50%;
-    }
-    100% {
-        width: 20%;
-        left: 0;
-    }
+  0% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 20%;
+    left: 0;
+  }
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: white;
-    width: 300px;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .desc {
-    margin-top: -15px;
-    font-size: 13px;
+  margin-top: -15px;
+  font-size: 13px;
 }
-.container a{
+.container .card a {
   width: 100%;
 }
-button {
-    width: 100%;
-    height: 35px;
-    border-radius: 5px;
-    margin-top: 10px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+.btn-dtail {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-    background-color: white;
-    color: #222831;
+  background-color: white;
+  color: #222831;
 }
-
-
 
 footer {
   background-color: #273036;
