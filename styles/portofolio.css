@@ -7,8 +7,9 @@
   }
 
   nav .a-link {
-      flex-direction: column;
+      flex-direction: column !important;
       margin-top: 10px;
+      
   }
 
   h1 {
