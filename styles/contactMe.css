@@ -10,7 +10,14 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
-
+nav {
+  display: flex;
+  margin-top: -0px;
+  position: sticky;
+  top: 0;
+  margin-left:0px;
+  z-index: 1000; /* Menentukan urutan tumpukan untuk memastikan navigasi di atas konten */
+}
 h1 {
   text-align: center;
   margin-top: 5%;
